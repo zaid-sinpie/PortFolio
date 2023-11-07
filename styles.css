@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Mulish:wght@400;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* --base--color: #010f40; */
+  /* --side--color:#B92542; */
+  /* --base--color:#39A2FE; */
+  --base--color: #020015;
+  --main--color: #8e1d42;
+  --side--color: #fe2e52;
+  --text--color: #fdeeeb;
+}
+
+body {
+  background: var(--base--color);
+  /* background: url(./assests/starry-night-sky.jpg); */
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  /* border:1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-left: 50px;
+  color: var(--text--color);
+  font-family: "Mulish", sans-serif;
+  font-weight: bolder;
+  color: var(--side--color);
+  cursor: pointer;
+}
+
+.links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--side--color);
+  font-family: "Mulish", sans-serif;
+  /* border: 2px solid var(--text--color); */
+  padding: 6px;
+  border-radius: 5px;
+  background: transparent;
+  font-weight: bolder;
+  /* box-shadow: rgba(255, 123, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+a {
+  position: relative;
+  color: var(--side--color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--side--color);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--side--color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+.content {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.img {
+  height: 640px;
+  width: 500px;
+  background: url(./assests/_081f0ced-1be4-41ba-864a-43e561a59a12.jpeg);
+}
+
+.textContent {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 10%;
+  top: 70%;
+}
+
+.hire,
+.explore {
+  height: 50px;
+  width: 100px;
+  background: var(--side--color);
+  border: 2px solid var(--side--color);
+  outline: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: var(--text--color);
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.hire:hover,
+.explore:hover {
+  border: 2px solid var(--side--color);
+  border-radius: 6px;
+  background: #000;
+}
+
+.name {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--text--color);
+  font-family: "Mulish", sans-serif;
+  font-weight: bolder;
+  top: 45%;
+  left: 10%;
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.profession {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--side--color);
+  font-family: "Mulish", sans-serif;
+  font-weight: bolder;
+  top: 56%;
+  left: 10%;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

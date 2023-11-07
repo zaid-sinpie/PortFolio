@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: var(--base--color);
+}
+
+:root {
+  /* --base--color: #010f40; */
+  /* --side--color:#B92542; */
+  /* --base--color:#39A2FE; */
+  --base--color: #020015;
+  --main--color: #8e1d42;
+  --side--color: #fe2e52;
+  --text--color: #fdeeeb;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  margin-top: 50px;
+  width: 70%;
+  border-radius: 6px;
+  /* background:var(--main--color); */
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width:thin;
+  scrollbar-color: var(--main--color) var(--side--color);
+}
+
+.scrollmenu::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+.scrollmenu button {
+  display: inline-block;
+  color: var(--text--color);
+  text-align: center;
+  padding: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+  background: var(--main--color);
+  border: 1px solid var(--main--color);
+  border-radius:4px;
+  cursor: pointer;
+}
+
+.active{
+  background: var(--side--color);
+}
+
+.scrollmenu a:hover {
+  background-color: var(--side--color);
+}
+
+.certificate-bg{
+  height: auto;
+  width: 90vw;
+  /* background: var(--side--color); */
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
