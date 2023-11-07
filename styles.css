@@ -45,6 +45,7 @@ body {
   font-weight: bolder;
   color: var(--side--color);
   cursor: pointer;
+  animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 .links {
@@ -64,6 +65,7 @@ body {
   border-radius: 5px;
   background: transparent;
   font-weight: bolder;
+  animation: 1s ease-out 0s 1 slideInTop;
   /* box-shadow: rgba(255, 123, 111, 0.2) 0px 7px 29px 0px; */
 }
 
@@ -179,5 +181,14 @@ a:hover::before {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
