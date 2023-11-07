@@ -106,8 +106,34 @@ a:hover::before {
   width: 100%;
   height: 70vh;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: auto;
+}
+
+.name{
+  font-size: 4rem;
+  color: var(--text--color);
+  animation: 1s ease-out 0s 1 slideInRight;
+  font-family: "Mulish", sans-serif;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.profession{
+  font-size: 3rem;
+  color: var(--side--color);
+  animation: 1s ease-out 0s 1 slideInLeft;
+  font-family: "Mulish", sans-serif;
+  margin-left: 20px;
+  font-weight: bolder;
 }
 
 .img {
@@ -147,10 +173,10 @@ a:hover::before {
 .explore:hover {
   border: 2px solid var(--side--color);
   border-radius: 6px;
-  background: #000;
+  background: var(--base--color);
 }
 
-.name {
+/* .name {
   position: absolute;
   font-size: 3rem;
   color: var(--text--color);
@@ -170,7 +196,7 @@ a:hover::before {
   top: 56%;
   left: 10%;
   animation: 1s ease-out 0s 1 slideInLeft;
-}
+} */
 
 @keyframes slideInRight {
   0% {
