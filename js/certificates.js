@@ -71,7 +71,7 @@ pantechCer.addEventListener('click', function(){
 });
 
 iotBootcampCer.addEventListener('click', function(){
-    image.src = '';
+    image.src = '../certificates/iotBootCamp.jpg';
     ibmCer.style.backgroundColor = '#8e1d42';
     infosysCer.style.backgroundColor = '#8e1d42';
     infosysIotCer.style.backgroundColor = '#8e1d42';
@@ -82,7 +82,7 @@ iotBootcampCer.addEventListener('click', function(){
 });
 
 cyberCer.addEventListener('click', function(){
-    image.src = '';
+    image.src = '../certificates/cyberForensics-4.jpg';
     ibmCer.style.backgroundColor = '#8e1d42';
     infosysCer.style.backgroundColor = '#8e1d42';
     infosysIotCer.style.backgroundColor = '#8e1d42';
