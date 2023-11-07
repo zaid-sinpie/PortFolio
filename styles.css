@@ -55,6 +55,10 @@ body {
   align-items: center;
 }
 
+.logo{
+  border-bottom: 2px solid var(--side--color);
+}
+
 .links a {
   text-decoration: none;
   font-size: 1.2rem;
