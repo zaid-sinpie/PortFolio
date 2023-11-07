@@ -11,23 +11,49 @@ const cyberCer = document.querySelector('.cyber');
 const image = document.querySelector('.images');
 
 image.src = '../certificates/IBM-0.jpg';
+ibmCer.style.backgroundColor = '#fe2e52';
 
 ibmCer.addEventListener('click', function(){
     image.src = '../certificates/IBM-0.jpg';
+    ibmCer.style.backgroundColor = '#fe2e52';
+    infosysCer.style.backgroundColor = '#8e1d42';
+    pantechCer.style.backgroundColor = '#8e1d42';
+    iotBootcampCer.style.backgroundColor = '#8e1d42';
+    cyberCer.style.backgroundColor = '#8e1d42';
 });
 
 infosysCer.addEventListener('click',function(){
     image.src = '../certificates/Info-1.jpg';
+    ibmCer.style.backgroundColor = '#8e1d42';
+    infosysCer.style.backgroundColor = '#fe2e52';
+    pantechCer.style.backgroundColor = '#8e1d42';
+    iotBootcampCer.style.backgroundColor = '#8e1d42';
+    cyberCer.style.backgroundColor = '#8e1d42';
 });
 
 pantechCer.addEventListener('click', function(){
     image.src = '../certificates/pantech-3.jpg';
+    ibmCer.style.backgroundColor = '#8e1d42';
+    infosysCer.style.backgroundColor = '#8e1d42';
+    pantechCer.style.backgroundColor = '#fe2e52';
+    iotBootcampCer.style.backgroundColor = '#8e1d42';
+    cyberCer.style.backgroundColor = '#8e1d42';
 });
 
 iotBootcampCer.addEventListener('click', function(){
     image.src = '';
+    ibmCer.style.backgroundColor = '#8e1d42';
+    infosysCer.style.backgroundColor = '#8e1d42';
+    pantechCer.style.backgroundColor = '#8e1d42';
+    iotBootcampCer.style.backgroundColor = '#fe2e52';
+    cyberCer.style.backgroundColor = '#8e1d42';
 });
 
 cyberCer.addEventListener('click', function(){
     image.src = '';
+    ibmCer.style.backgroundColor = '#8e1d42';
+    infosysCer.style.backgroundColor = '#8e1d42';
+    pantechCer.style.backgroundColor = '#8e1d42';
+    iotBootcampCer.style.backgroundColor = '#8e1d42';
+    cyberCer.style.backgroundColor = '#fe2e52';
 });
