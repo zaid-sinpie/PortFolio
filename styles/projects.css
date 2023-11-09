@@ -21,8 +21,8 @@
   gap: 20px;
 }
 
-body{
-    background: var(--main--color);
+body {
+  background: var(--main--color);
 }
 
 .navbar {
@@ -41,7 +41,8 @@ body{
   border: 2px solid var(--text--color);
   padding: 10px;
   border-radius: 6px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .content {
@@ -65,12 +66,12 @@ body{
   align-items: center;
 }
 
-.left-box h1{
-    margin-top: 10px;
-    font-size: 1.8rem;
+.left-box h1 {
+  margin-top: 10px;
+  font-size: 1.8rem;
 }
 
-.btn a{
+.btn a {
   text-decoration: none;
   color: var(--text--color);
   font-weight: bolder;
@@ -78,45 +79,51 @@ body{
   background: var(--side1--color);
   padding: 20px;
   border-radius: 5px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   border: 2px solid var(--side1--color);
 }
 
-.btn a:hover{
+.btn a:hover {
   background: var(--main--color);
   border: 2px solid var(--side--color);
 }
 
-.components{
+.line {
+  height: 1px;
+  background: var(--side--color);
+  width: 80%;
+}
+
+.components {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height:300px;
+  height: 300px;
 }
 
-.compo-box{
+.compo-box {
   height: 100%;
   border: 1px solid white;
   border-radius: 12px;
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
   align-items: center;
 }
 
-.compo-box span{
+.compo-box span {
   background: var(--side--color);
   padding: 10px;
   border-radius: 3px;
 }
 
-.right-box{
-    width: 50%;
-    height: 100%;
-    /* border: 1px solid var(--base--color);
+.right-box {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid var(--base--color);
     border-radius: 12px; */
 }
