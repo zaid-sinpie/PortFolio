@@ -125,6 +125,8 @@ a:hover::before {
   font-family: "Mulish", sans-serif;
   margin-left: 20px;
   font-weight: bolder;
+  /* -webkit-text-stroke: 5px white;
+  -webkit-text-fill-color: transparent;  */
 }
 
 .profession{
