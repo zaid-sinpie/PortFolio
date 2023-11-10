@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* --base--color: #010f40; */
+    /* --side--color:#B92542; */
+    /* --base--color:#39A2FE; */
+    --base--color: #020015;
+    --main--color: #8e1d42;
+    --side--color: #fe2e52;
+    --text--color: #fdeeeb;
+  }
+
+body{
+    background: var(--base--color);
+    font-family: "Mulish", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url(../assests/_081f0ced-1be4-41ba-864a-43e561a59a12.jpeg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.certifications{
+    color: var(--text--color);
+}
+
+.content{
+    height: 70%;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box h2{
+    color: var(--side--color);
+    font-weight: bolder ;
+}
+
+.certi, .edu{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.certi-edu-box{
+    height: 100px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, .9);
+    /* border: 1px solid var(--side--color); */
+    /* border-radius: 8px; */
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.certi-edu-box:hover{
+    height: 110px;
+    width: 210px;
+}
+
+.edu{
+    align-items: start;
+}
