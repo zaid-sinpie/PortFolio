@@ -9,7 +9,11 @@
   <body>
     <main class="container">
       <div class="navbar">
-        <a href="#">HOME</a>
+        <!-- <a href="../index.html" class="home" onclick="history.back()">HOME</a> -->
+        <a href="../index.html" class="home">HOME</a>
+      </div>
+      <div class="bar bar--1">
+        <h1> 1 HYDROPONIC</h1>
       </div>
       <div class="content--1 content">
         <div class="left-box">
@@ -48,6 +52,44 @@
             <h2>* The LED's turns on only for one hour in a day for everyday.</h2>
           </div>
         </div>
+      </div>
+      <div class="bar bar--2">
+        <h1>2 AGRICULTURE MONITORING</h1>
+      </div>
+      <div class="content--2 content">
+        <div class="left-box">
+            <h1>
+                Agriculture Monitoring and controlled farming system
+            </h1>
+            <div class="line"></div>
+            <div class="components">
+              <h2>* Components Used *</h2>
+              <div class="compo-box">
+                <span>ESP32</span>
+                <span>DHT22</span>
+                <span>OLED DISPLAY</span>
+                <span>RELAY</span>
+                <span>WATER PUMP</span>
+                <span>MOISTURE SENSOR</span>
+                <span>BMS</span>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="#">SOFTWARE</a>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="heading"></div>
+            <div class="brief">
+              <h2>* I have used ESP32 as my main microcontroller to sense the input and control the output.</h2>
+              <h2>* I have selected ESP32 because it has inbuilt bluetooth and wifi modules init.</h2>
+              <h2>* I have used DHT22 sensore to sense both the humidity and temperature of the hydroponic system.</h2>
+              <h2>* I have displayed the temperature and humidity over a OLED display to monitor them continuesly.</h2>
+              <h2>* Also connected this system with the thingspeak cloud platform to check the temperature and humidity over smart devices.</h2>
+              <h2>* The water pump powered by relay turns on whenever the humidity goes below 40% and after some delay it will turn off automatically.</h2>
+              <h2>* The LED's turns on only for one hour in a day for everyday.</h2>
+            </div>
+          </div>
       </div>
     </main>
     <script src="../js/projects.js"></script>
