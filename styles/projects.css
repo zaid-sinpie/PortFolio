@@ -64,6 +64,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-family: "Mulish", sans-serif;
 }
 
 .left-box h1 {
@@ -101,11 +102,11 @@ body {
   align-items: center;
   gap: 20px;
   height: 300px;
+  /* font-family: "Mulish", sans-serif; */
 }
 
 .compo-box {
   height: 100%;
-  border: 1px solid white;
   border-radius: 12px;
   width: 60%;
   display: flex;
@@ -124,6 +125,24 @@ body {
 .right-box {
   width: 50%;
   height: 100%;
-  /* border: 1px solid var(--base--color);
-    border-radius: 12px; */
+  border: 1px solid var(--base--color);
+  border-radius: 12px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.brief{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text--color);
+  width: 80%;
+  text-align: start;
+  gap: 20px;
+}
+
+.brief h2{
+  font-family: "Mulish", sans-serif;
 }
