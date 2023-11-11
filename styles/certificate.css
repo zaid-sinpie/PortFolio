@@ -61,7 +61,9 @@ body{
 
 .box h2{
     color: var(--side--color);
-    font-weight: bolder ;
+    font-weight: bolder;
+    border: 1.5px solid var(--side--color);
+    padding: 10px;
 }
 
 .certi, .edu{
@@ -95,10 +97,9 @@ body{
     align-items: center;
 }
 
-/* .certi-edu-box:hover{
-    height: 110px;
-    width: 210px;
-} */
+.certi-edu-box:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
 
 /* .edu{
     align-items: start;
@@ -111,4 +112,57 @@ body{
 
 .text1{
     color: var(--text--color);
+    -webkit-text-stroke: .3px var(--main--color);
+  -webkit-text-fill-color: var(--text--color); 
+}
+
+.modal{
+    position: absolute;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.modal-certificate{
+    height: 85%;
+    width: 100%;
+    position: relative;
+}
+
+.images{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 10px;
+    width: 100%;
+    font-size: 2rem;
+    margin-right: 5px;
+    color: var(--main--color);
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.hidden{    
+    display: none;
 }
