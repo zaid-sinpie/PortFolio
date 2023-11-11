@@ -82,13 +82,26 @@ body{
     /* border-radius: 8px; */
     cursor: pointer;
     transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.certi-edu-box:hover{
+/* .certi-edu-box:hover{
     height: 110px;
     width: 210px;
-}
+} */
 
 .edu{
     align-items: start;
+}
+
+.text{
+    color: var(--side--color);
+    font-size: 1rem;
+}
+
+.text1{
+    color: var(--text--color);
 }
