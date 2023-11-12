@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: var(--text--color);
 }
 
 :root {
@@ -65,6 +66,10 @@ body{
     background: rgba(232, 127, 127, 0.3);
     border-radius: 12px;
     border: 2px solid var(--text--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2{
