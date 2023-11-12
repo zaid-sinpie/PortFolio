@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border-radius: 8px;
 }
 
 :root {
@@ -10,7 +11,9 @@
     --base--color: #00001A;
     --main--color: #8e1d42;
     /* --side--color: #fe2e52; */
-    --side--color: #FDFFAE;
+    /* --side--color: #FDFFAE; */
+    --side--color: #ffccb0;
+    /* --side--color: #e56a6b; */
     --text--color: #fdeeeb;
   }
 
