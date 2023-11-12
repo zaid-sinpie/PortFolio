@@ -16,11 +16,15 @@ const panIot = document.querySelector('.certificate--5');
 const witBootcamp = document.querySelector('.certificate--6');
 const cyberForensics = document.querySelector('.certificate--7');
 
+
+
 //display modal
 const openModal = function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
+
+
 
 //close modal
 const closeModal = function () {
