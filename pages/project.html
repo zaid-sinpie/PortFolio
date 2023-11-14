@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projects</title>
-    <link rel="stylesheet" href="../styles/project.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/project.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="heading">
-            <h2>Academic Projects</h2>
-            <h2>Personal Projects</h2>
+      <div class="heading">
+        <h2>Academic Projects</h2>
+        <h2>Personal Projects</h2>
+      </div>
+      <div class="content">
+        <div class="personal-projects projects">
+          <div class="box box1 hydroponic">
+            <h2>Hydroponic</h2>
+            <h3>In Third Year: 2022</h3>
+          </div>
+          <div class="box box1">
+            <h2>Web Application</h2>
+            <h3>In Final Year: 2023</h3>
+          </div>
         </div>
-        <div class="content">
-            <div class="personal-projects projects">
-                <div class="box box1 hydroponic">
-                    <h2>Hydroponic</h2>
-                    <h3>In Third Year: 2022</h3>
-                </div>
-                <div class="box box1">
-                    <h2>Web Application</h2>
-                    <h3>In Final Year: 2023</h3>
-                </div>
-            </div>
-            <div class="Academic-projects projects">
-                <div class="box box2">
-                    <h2>Web Game</h2>
-                    <h3>In 2023</h3>
-                </div>
-                <div class="box box2">
-                    <h2>Agricultural Monitoring</h2>
-                    <h3>In 2022</h3>
-                </div>
-            </div>
+        <div class="Academic-projects projects">
+          <div class="box box2">
+            <h2>Web Game</h2>
+            <h3>In 2023</h3>
+          </div>
+          <div class="box box2">
+            <h2>Agricultural Monitoring</h2>
+            <h3>In 2022</h3>
+          </div>
         </div>
+      </div>
+      <div class="modal hydroponic-modal hidden">
+        <h1>Hydroponic</h1>
+        <div class="list">
+            <li>I have used ESP32 as my main microcontroller</li>
+            <li>Because it have inbuilt Bluetooth and Wifi modules</li>
+            <li>I have used DHT22 sensor to measure the Temperature & Humidity</li>
+            <li>OLED display is used to display the Temperature and Humidity</li>
+            <li>A Relay connect to water pump to controll the humidity</li>
+        </div>
+        <button class="btn">CheckOut GitHub</button>
+    </div>
+    <div class="overlay hidden"></div>
     </div>
     <script src="../js/project.js"></script>
-</body>
+  </body>
 </html>
