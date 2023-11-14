@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #020015;
+  --text-color: #ffffff;
+  --side--color: #fe2e52;
+  --box-color: #0e093c;
+  --border-color: #080057;
+  --line-color: #262063;
+}
+
+body {
+  background: var(--main-color);
+  font-family: "Mulish", sans-serif;
+}
+
+.maincont {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillscont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  height: 100%;
+  width: 70%;
+  background: url(../assests/_081f0ced-1be4-41ba-864a-43e561a59a12.jpeg)
+    no-repeat;
+  background-size: 70%;
+  position: relative;
+  animation: 1s ease-out 0s 1 slideInTop;
+}
+
+.heading {
+  position: absolute;
+  top: 70%;
+  left: 17%;
+  animation: 2s ease-out 0s 1 slideInLeft;
+}
+
+.heading h1 {
+  color: var(--text-color);
+  font-size: 4rem;
+  border: 2px solid var(--side--color);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.right {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70%;
+  width: 80%;
+  background: var(--box-color);
+  border-radius: 12px;
+  border: 4px solid var(--border-color);
+}
+
+.box h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.line {
+  height: 5px;
+  width: 80%;
+  background: var(--line-color);
+  margin: 20px;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
