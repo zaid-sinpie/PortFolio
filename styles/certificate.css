@@ -148,7 +148,7 @@ body{
 .images{
     position: absolute;
     height: 100%;
-    width: 80%;
+    width: auto;
 }
 
 .btn{
