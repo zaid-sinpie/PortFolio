@@ -11,4 +11,16 @@
 
 // breathingDiv.addEventListener('click',function(){
 //     setInterval(breatheAnimation, 1000);
-// });
+// });\
+
+
+
+
+
+//button explore action
+
+const exploreBtn = document.querySelector('.explore');
+
+exploreBtn.onclick = function(){
+    location.href = "./pages/explore.html";
+}
