@@ -52,37 +52,37 @@ document.addEventListener("keydown", function (e) {
 
 ibmPythonCer.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/IBM-0.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=1yNzlpl0NU5mVeyKdRXsG_o5lTVcH3LyU";
 });
 
 infoPythonCer.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/Info-1.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=1YFpxnWALPfmgZCFNrLjXNNyOW_h3TWJB";
 });
 
 infoIotCer.addEventListener("click", function () {
   openModal();
-  certiImg.src = "https://drive.google.com/file/d/1Bov1QSkVDItVuSjavtoCkjlxxLqQFbf5/view?usp=sharing";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=13zEa7ITesIpsJLHiyzVDsv42eJSLeVLt";
 });
 
 infoHighImpactPresentation.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/infoHighImpactPresentation.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=1I-Uoke57WIlcchc6H5LDgebUy_0_EAt4";
 });
 
 panIot.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/pantech-3.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=19Fi5v3OgRgJjidPv9BwkVVlqEYcpXqm7";
 });
 
 witBootcamp.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/iotBootCamp.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=1SecokaV8_7sC14UzVeCUhu8Sl-nDxGnQ";
 });
 
 cyberForensics.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/cyberForensics-4.jpg";
+  certiImg.src = "https://drive.google.com/uc?export=view&id=1-dA3KvChelH75TdVJ2bUU2T27AoY71PU";
 });
 
 //Educational marksheets showing
