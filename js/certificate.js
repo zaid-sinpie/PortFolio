@@ -62,7 +62,7 @@ infoPythonCer.addEventListener("click", function () {
 
 infoIotCer.addEventListener("click", function () {
   openModal();
-  certiImg.src = "../certificates/InfoIot.jpg";
+  certiImg.src = "https://drive.google.com/file/d/1Bov1QSkVDItVuSjavtoCkjlxxLqQFbf5/view?usp=sharing";
 });
 
 infoHighImpactPresentation.addEventListener("click", function () {
