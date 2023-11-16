@@ -51,12 +51,33 @@ body {
   animation: 1s ease-out 0s 1 slideInLeft;
   z-index: 10; */
   background: url(./assests/logo.png) no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-size: 70px;
   margin-top: 25px;
   margin-left: 25px;
   cursor: pointer;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.logo .tooltips{
+  position: absolute;
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(165, 165, 165);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  top: 25px;
+  left: 90%;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.logo:hover .tooltips{
+  visibility: visible;
 }
 
 .links{
