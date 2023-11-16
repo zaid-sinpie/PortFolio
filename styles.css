@@ -59,13 +59,15 @@ body {
   cursor: pointer;
   position: relative;
   transition: .5s ease-in-out;
+  animation: 1s ease-out 0s 1 slideInLeft;
+  z-index: 10;
 }
 
 .logo .tooltips{
   position: absolute;
   visibility: hidden;
   width: 120px;
-  background-color: rgb(165, 165, 165);
+  background-color: rgb(130, 129, 129);
   color: #fff;
   text-align: center;
   font-weight: bold;
