@@ -65,7 +65,7 @@ body{
     position: absolute;
     visibility: hidden;
     width: 120px;
-    background-color: rgb(130, 129, 129);
+    background-color: var(--side--color);
     color: #fff;
     text-align: center;
     font-weight: bold;
