@@ -154,9 +154,11 @@ a:hover::before {
     /* background: white; */
 }
 
-.certificate, .education{
+.certificate{
     /* display: inline-block; */
     transform: rotate(270deg);
+    padding-bottom:2px;
+    border-bottom: 2px solid var(--text--color);
 }
 
 .heading span{
