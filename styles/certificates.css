@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* --base--color: #010f40; */
+    /* --side--color:#B92542; */
+    /* --base--color:#39A2FE; */
+    --base--color: #00001a;
+    --main--color: #8e1d42;
+    --side--color: #fe2e52;
+    --text--color: #fdeeeb;
+}
+
+body{
+    background: var(--base--color);
+    font-family: "Mulish", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url(../assests/alienMoon.jpeg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    /* font-size: 2.5rem;
+    margin-left: 50px;
+    font-family: "Mulish", sans-serif;
+    font-weight: bolder;
+    color: var(--side--color);
+    cursor: pointer;
+    background: transparent;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    z-index: 10; */
+    background: white;
+    width: 70px;
+    height: 70px;
+    background: url(../assests/logo.png) no-repeat;
+    background-size: 70px;
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: .5s ease-in-out;
+    animation: 1s ease-out 0s 1 slideInLeft;
+    z-index: 10;
+}
+
+.logo .tooltips{
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(130, 129, 129);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    top: 25px;
+    left: 90%;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.logo:hover .tooltips{
+    visibility: visible;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: white; */
+    z-index: 10;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--side--color);
+    font-family: "Mulish", sans-serif;
+    /* border: 2px solid var(--text--color); */
+    padding: 6px;
+    border-radius: 5px;
+    background: transparent;
+    font-weight: bolder;
+    animation: 1s ease-out 0s 1 slideInTop;
+    /* box-shadow: rgba(255, 123, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+a {
+    position: relative;
+    color: var(--side--color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--side--color);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--side--color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+.divider{
+    height: 2px;
+    width: 90%;
+    background: var(--side--color);
+}
+
+.content{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background: white; */
+}
+
+.certificate, .education{
+    /* display: inline-block; */
+    transform: rotate(270deg);
+}
+
+.heading span{
+    color: var(--text--color);
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.con{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 80%;
+    width: 65%;
+    background: rgba(158, 158, 158,.3);
+    border: 2px solid var(--text--color);
+    border-radius: 12px;
+}
+
+.bar{
+    height: 90%;
+    width: 20%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cer{
+    height: 10%;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--text--color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cer:hover{
+    height: 12%;
+    width: 82%
+}
+
+.cer p{
+    color: var(--text--color);
+    font-weight: bolder;
+}
+
+.active-cer{
+    background: rgba(255, 255, 255, 0.5);
+}
