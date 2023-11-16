@@ -196,7 +196,7 @@ a:hover::before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 110px;
+  width: 65px;
   font-size: 1.6rem;
   cursor: pointer;
 }
