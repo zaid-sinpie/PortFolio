@@ -201,7 +201,7 @@ a:hover::before {
 }
 
 .cer{
-    height: 10%;
+    height: 12%;
     width: 80%;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid var(--text--color);
@@ -216,7 +216,7 @@ a:hover::before {
 }
 
 .cer:hover{
-    height: 12%;
+    height: 14%;
     width: 82%;
 }
 
