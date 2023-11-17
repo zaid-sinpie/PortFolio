@@ -227,14 +227,18 @@ a:hover::before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 65px;
+  width: 70px;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
+.social a{
+  color: var(--side--color);
+  transition: .3s ease-in-out;
+}
 i{
   color: var(--side--color);
-  transition: .3s ease-in-out
+  transition: .3s ease-in-out;
 }
 
 i:hover{
