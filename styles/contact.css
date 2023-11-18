@@ -199,6 +199,7 @@ a:hover::before {
   padding: 10px;
   color: #0b0734;
   width: 90%;
+  /* resize: none; */
 }
 
 @keyframes slideInLeft {
