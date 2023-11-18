@@ -143,3 +143,25 @@ body {
 .hidden{
     display: none;
 }
+
+@media only screen and (max-width:367px) {
+  body{
+    font-size: 1rem;
+  }
+
+  .box{
+    height: 40%;
+    width: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .content{
+    gap: 20px;
+  }
+  .heading{
+    gap: 10px;
+    width: auto;
+  }
+}
