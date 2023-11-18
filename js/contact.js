@@ -1,14 +1,25 @@
-'use strict';
+"use strict";
 
-const mailForm = document.getElementById('mail-form');
+const mailForm = document.getElementById("mail-form");
 
-mailForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    const name = mailForm.elements['name'];
-    const email = mailForm.elements['email'];
-    const subject = mailForm.elements['subject'];
-    const message = mailForm.elements['message'];
-    fetch('https://portfolio-mail-server.onrender.com/sendmail',{
-        method:'POST',body: JSON.stringify({name,email,subject,message})
-    });
+mailForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const viewerName = mailForm.elements["name"].value;
+  const email = mailForm.elements["email"].value;
+  const subject = mailForm.elements["subject"].value;
+  const message = mailForm.elements["message"].value;
+  const body = JSON.stringify({
+    name: viewerName,
+    email,
+    subject,
+    content: message,
+  });
+  console.log(body);
+  fetch("https://portfolio-mail-server.onrender.com/sendmail", {
+    method: "POST",
+    body,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 });
