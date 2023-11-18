@@ -5,14 +5,14 @@
 }
 
 :root {
-    /* --base--color: #010f40; */
-    /* --side--color:#B92542; */
-    /* --base--color:#39A2FE; */
-    --base--color: #020015;
-    --main--color: #8e1d42;
-    --side--color: #fe2e52;
-    --text--color: #fdeeeb;
-  }
+  /* --base--color: #010f40; */
+  /* --side--color:#B92542; */
+  /* --base--color:#39A2FE; */
+  --base--color: #020015;
+  --main--color: #8e1d42;
+  --side--color: #fe2e52;
+  --text--color: #fdeeeb;
+}
 
 body {
   background: #020015;
@@ -48,7 +48,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: 0.5s ease-in-out;
-  /* animation: 1s ease-out 0s 1 slideInLeft; */
+  animation: 1s ease-out 0s 1 slideInLeft;
   z-index: 10;
 }
 
@@ -95,7 +95,7 @@ body {
   border-radius: 5px;
   background: transparent;
   font-weight: bolder;
-  /* animation: 1s ease-out 0s 1 slideInTop; */
+  animation: 1s ease-out 0s 1 slideInTop;
   /* box-shadow: rgba(255, 123, 111, 0.2) 0px 7px 29px 0px; */
 }
 
@@ -199,4 +199,22 @@ a:hover::before {
   padding: 10px;
   color: #0b0734;
   width: 90%;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
