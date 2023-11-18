@@ -20,7 +20,12 @@
 //button explore action
 
 const exploreBtn = document.querySelector('.explore');
+const hirebtn = document.querySelector('.hire');
 
 exploreBtn.onclick = function(){
     location.href = "./pages/explore.html";
+}
+
+hirebtn.onclick = function(){
+    location.href = "./pages/contact.html";
 }

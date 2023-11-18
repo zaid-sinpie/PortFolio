@@ -228,3 +228,40 @@ a:hover::before {
 .active-cer{
     background: rgba(255, 255, 255, 0.5);
 }
+
+@media only screen and (max-width: 480px) {
+    .links {
+        width: 220px;
+    }
+
+    .links a{
+        font-size: 1rem;
+    }
+    .box{
+        height: 220px;
+        width: 220px;
+    }
+    .cer p {
+        font-size: .5rem;
+    }
+    .bar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        /* background: #000; */
+    }
+    .cer{
+        width: 4 0%;
+    }
+    .con{
+        flex-direction: column;
+    }
+    .certificate{
+        justify-content: start;
+        align-items: start;
+    }
+    .logo{
+        margin: 0;
+        margin-left: 5px;
+    }
+  }
