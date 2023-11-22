@@ -1,6 +1,7 @@
 "use strict";
 
 const mailForm = document.getElementById("mail-form");
+const logo = document.querySelector('.logo');
 
 mailForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -22,4 +23,8 @@ mailForm.addEventListener("submit", function (event) {
       "Content-Type": "application/json",
     },
   });
+});
+
+logo.addEventListener('click',function(){
+  location.href = 'https://drive.google.com/file/d/10ZfdNP4dSzvaSNJMuI2sEI_DKP2amNyA/view?usp=sharing';
 });

@@ -7,6 +7,7 @@ const infoHighImpactPresentation = document.querySelector('.certificate4');
 const panIot = document.querySelector('.certificate5');
 const witBootcamp = document.querySelector('.certificate6');
 const cyberForensics = document.querySelector('.certificate7');
+const logo = document.querySelector('.logo');
 
 const images = document.querySelector('.images');
 const active = document.querySelector('.active-cer');
@@ -87,3 +88,7 @@ ibmPythonCer.addEventListener("click", function () {
     witBootcamp.classList.remove('active-cer');
     cyberForensics.classList.add('active-cer');
   });
+
+  logo.addEventListener('click',function(){
+    location.href = 'https://drive.google.com/file/d/10ZfdNP4dSzvaSNJMuI2sEI_DKP2amNyA/view?usp=sharing';
+});

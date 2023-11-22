@@ -21,6 +21,7 @@
 
 const exploreBtn = document.querySelector('.explore');
 const hirebtn = document.querySelector('.hire');
+const logo = document.querySelector('.logo');
 
 exploreBtn.onclick = function(){
     location.href = "./pages/explore.html";
@@ -29,3 +30,7 @@ exploreBtn.onclick = function(){
 hirebtn.onclick = function(){
     location.href = "./pages/contact.html";
 }
+
+logo.addEventListener('click',function(){
+    location.href = 'https://drive.google.com/file/d/10ZfdNP4dSzvaSNJMuI2sEI_DKP2amNyA/view?usp=sharing';
+});
