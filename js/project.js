@@ -4,6 +4,7 @@ const hydroponic = document.querySelector('.hydroponic');
 const webApp = document.querySelector('.webapp');
 const webGame = document.querySelector('.wegame');
 const agricuulture = document.querySelector('.agriculture');
+const logo = document.querySelector('.logo');
 
 
 //modal classes
@@ -55,3 +56,7 @@ document.addEventListener('keydown',function(e){
         overlay.classList.add('hidden');
     }
 })
+
+logo.addEventListener('click',function(){
+    location.href = 'https://drive.google.com/file/d/10ZfdNP4dSzvaSNJMuI2sEI_DKP2amNyA/view?usp=sharing';
+});
