@@ -248,4 +248,7 @@ a:hover::before {
   .iptbox{
     width: 100%;
   }
+  .links a{
+    font-size: 1rem;
+  }
 }
