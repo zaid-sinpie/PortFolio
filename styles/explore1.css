@@ -134,9 +134,34 @@ a:hover::before {
 .skills--box{
     height: 60%;
     width: 80%;
-    background: yellow;
+    /* background: yellow; */
+    background: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+}
+
+.box{
+  background: white;
+  width: 40%;
+  height: 10%;
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.bar{
+  width: 70%;
+  border: 1px solid #e3e3e3;
+  background: linear-gradient(to right, rgb(149, 231, 18) 50%, white);
+  height: 5px;
+}
+
+.bar-c{
+  background: linear-gradient(to right, rgb(231, 210, 18) 50%, white);
 }
