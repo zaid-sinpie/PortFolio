@@ -227,7 +227,7 @@ a:hover::before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70px;
+  width: 200px;
   font-size: 1.6rem;
   cursor: pointer;
 }
