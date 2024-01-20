@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>projects</title>
-    <link rel="stylesheet" href="../styles/project.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav">
-        <div class="logo">
-          <span class="tooltips">Resume</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projects</title>
+  <link rel="stylesheet" href="../styles/project.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <span class="tooltips">Resume</span>
+      </div>
+      <div class="links">
+        <a href="../index.html" class="links-a Home">Home</a>
+        <a href="../pages/certificates.html" class="links-a certificate">Certifications</a>
+        <a href="../pages/contact.html" class="links-a contact">Contact</a>
+      </div>
+    </div>
+    <div class="heading">
+      <h2>Academic Projects</h2>
+      <h2>Personal Projects</h2>
+    </div>
+    <div class="content">
+      <div class="personal-projects projects">
+        <div class="box box1 hydroponic">
+          <h2>Hydroponic</h2>
+          <h3>In Third Year: 2022</h3>
         </div>
-        <div class="links">
-          <a href="../index.html" class="links-a Home">Home</a>
-          <a href="../pages/certificates.html" class="links-a certificate">Certifications</a>
-          <a href="../pages/contact.html" class="links-a contact">Contact</a>
+        <div class="box box1 webapp">
+          <h2>Web Application</h2>
+          <h3>In Final Year: 2023</h3>
         </div>
       </div>
-      <div class="heading">
-        <h2>Academic Projects</h2>
-        <h2>Personal Projects</h2>
-      </div>
-      <div class="content">
-        <div class="personal-projects projects">
-          <div class="box box1 hydroponic">
-            <h2>Hydroponic</h2>
-            <h3>In Third Year: 2022</h3>
-          </div>
-          <div class="box box1 webapp">
-            <h2>Web Application</h2>
-            <h3>In Final Year: 2023</h3>
-          </div>
+      <div class="Academic-projects projects">
+        <div class="box box2 wegame">
+          <h2>Web Game</h2>
+          <h3>In 2023</h3>
         </div>
-        <div class="Academic-projects projects">
-          <div class="box box2 wegame">
-            <h2>Web Game</h2>
-            <h3>In 2023</h3>
-          </div>
-          <div class="box box2 agriculture">
-            <h2>Agricultural Monitoring</h2>
-            <h3>In 2022</h3>
-          </div>
+        <div class="box box2 agriculture">
+          <h2>Website design</h2>
+          <h3>In 2023</h3>
         </div>
       </div>
-      <div class="modal hydroponic-modal hidden">
-        <h1>Hydroponic</h1>
-        <div class="list">
-            <li>I have used ESP32 as my main microcontroller</li>
-            <li>Because it have inbuilt Bluetooth and Wifi modules</li>
-            <li>I have used DHT22 sensor to measure the Temperature & Humidity</li>
-            <li>OLED display is used to display the Temperature and Humidity</li>
-            <li>A Relay connect to water pump to controll the humidity</li>
-        </div>
-        <a href="https://github.com/zaid-sinpie/Hydroponic" target="_blank"><button class="btn btn-hydroponic">CheckOut GitHub</button></a>
+    </div>
+    <div class="modal hydroponic-modal hidden">
+      <h1>Hydroponic</h1>
+      <div class="list">
+        <li>I have used ESP32 as my main microcontroller</li>
+        <li>Because it have inbuilt Bluetooth and Wifi modules</li>
+        <li>I have used DHT22 sensor to measure the Temperature & Humidity</li>
+        <li>OLED display is used to display the Temperature and Humidity</li>
+        <li>A Relay connect to water pump to controll the humidity</li>
+      </div>
+      <a href="https://github.com/zaid-sinpie/Hydroponic" target="_blank"><button class="btn btn-hydroponic">CheckOut
+          GitHub</button></a>
     </div>
     <div class="modal Webapp-modal hidden">
-        <h1>WebApplication</h1>
-        <div class="list">
-            <li>In this projects I have designed and developed the FrontEnd.</li>
-            <li>For designing purpose I have used the Figma</li>
-            <li>After designing the UI I have converted te UI into webApp pages using HTML,CSS & JavaScript</li>
-        </div>
-        <a href="https://github.com/zaid-sinpie/major-UI" target="_blank"><button class="btn btn-webapp">CheckOut GitHub</button></a>
+      <h1>WebApplication</h1>
+      <div class="list">
+        <li>In this projects I have designed and developed the FrontEnd.</li>
+        <li>For designing purpose I have used the Figma</li>
+        <li>After designing the UI I have converted te UI into webApp pages using HTML,CSS & JavaScript</li>
+      </div>
+      <a href="https://github.com/zaid-sinpie/major-UI" target="_blank"><button class="btn btn-webapp">CheckOut
+          GitHub</button></a>
     </div>
     <div class="modal webgame-modal hidden">
       <h1>WebGame</h1>
@@ -71,21 +75,22 @@
         <li>I built this game using HTML, CSS & JavaScript</li>
         <li>This game is fully hosted over GitHub Platform</li>
       </div>
-      <a href="https://zaid-sinpie.github.io/GuesNumberGame/" target="_blank"><button class="btn btn-webgame1">Guees Number</button></a>
-      <a href="https://zaid-sinpie.github.io/Pig-Game/" target="_blank"><button class="btn btn-webgame2">Greedy Game</button></a>
-  </div>
-  <div class="modal agricultural-modal hidden">
-    <h1>Agricultural Monitoring System</h1>
-    <div class="list">
-      <li>In this project I have used ESP32 as my main Microntroller</li>
-      <li>For Temperature and Humidity Monitoring I have used DHT22 sensor</li>
-      <li>and soil moisture sensor to continously monitor the moisture of field</li>
-      <li>A relay operated water pump to maintain the desired moisture of the fields</li>
+      <a href="https://zaid-sinpie.github.io/GuesNumberGame/" target="_blank"><button class="btn btn-webgame1">Guees
+          Number</button></a>
+      <a href="https://zaid-sinpie.github.io/Pig-Game/" target="_blank"><button class="btn btn-webgame2">Greedy
+          Game</button></a>
     </div>
-    <!-- <a href="#" target="_blank"><button class="btn btn-agricultural">CheckOut GitHub</button></a> -->
-</div>
+    <div class="modal agricultural-modal hidden">
+      <h1>Website design</h1>
+      <div class="list">
+        <li>I've utilized HTML, CSS, and JavaScript to create a simple website for a project. This project was inspired
+          by a course on Udemy. Through JavaScript, I implemented DOM manipulation to enhance its functionality.</li>
+      </div>
+      <a href="https://zaid-sinpie.github.io/apkWebsite/" target="_blank"><button class="btn btn-agricultural">CheckOut GitHub</button></a>
+    </div>
     <div class="overlay hidden"></div>
-    </div>
-    <script src="../js/project.js"></script>
-  </body>
+  </div>
+  <script src="../js/project.js"></script>
+</body>
+
 </html>
