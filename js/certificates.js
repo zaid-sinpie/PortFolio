@@ -90,5 +90,5 @@ ibmPythonCer.addEventListener("click", function () {
   });
 
   logo.addEventListener('click',function(){
-    location.href = 'https://drive.google.com/file/d/1lHiLD1LdtWyUJQMGs5tbkYhL3YLH2aiN/view?usp=sharing';
+    location.href = 'https://drive.google.com/file/d/11mayLF_D-WLykq0bMY0Uh07pGifqD3S0/view?usp=sharing';
 });
